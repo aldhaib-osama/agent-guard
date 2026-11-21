@@ -1,0 +1,53 @@
+test_every_attack_has_a_recorded_block (test_agentguard.Eval) ... ok
+test_guard_keeps_benign_utility (test_agentguard.Eval) ... ok
+test_guard_stops_all_modelled_attacks (test_agentguard.Eval) ... ok
+test_unguarded_is_vulnerable (test_agentguard.Eval) ... ok
+test_approver_can_allow (test_agentguard.Unit) ... ok
+test_email_parsing (test_agentguard.Unit) ... ok
+test_lookalike_domain_not_trusted (test_agentguard.Unit) ... ok
+test_path_traversal_denied (test_agentguard.Unit) ... ok
+test_secret_encodings (test_agentguard.Unit) ... ok
+test_trifecta_blocks_untrusted_fetch_without_known_secret (test_agentguard.Unit) ... ok
+test_trusted_destination_allowed_even_in_trifecta (test_agentguard.Unit) ... ok
+test_unknown_tool_denied (test_agentguard.Unit) ... ok
+test_adapter_loop_respects_max_steps (test_depth.Adapter) ... ok
+test_obey_rate_zero_ignores_injection_and_one_follows (test_depth.Adapter) ... ok
+test_ablation_shows_trifecta_layer_carries_heldout_when_approver_is_permissive (test_depth.Benchmark) ... ok
+test_approver_removes_overblock_without_adding_default_leaks (test_depth.Benchmark) ... ok
+test_default_numbers (test_depth.Benchmark) ... ok
+test_partial_obedience_never_increases_guarded_success (test_depth.Benchmark) ... ok
+test_corpus_shape (test_depth.Corpus) ... ok
+test_every_attack_succeeds_unguarded (test_depth.Corpus) ... ok
+test_cli_validate_policy (test_depth.PolicyFile) ... ok
+test_default_file_loads_and_matches_behaviour (test_depth.PolicyFile) ... ok
+test_new_tool_needs_its_declared_args (test_depth.PolicyFile) ... ok
+test_validation_errors (test_depth.PolicyFile) ... ok
+test_audit_has_redacted_destination_only (test_depth.Provenance) ... ok
+test_case_and_whitespace_insensitive_and_url_decoded (test_depth.Provenance) ... ok
+test_known_gap_reencoded_private_text_is_not_detected_by_provenance (test_depth.Provenance) ... ok
+test_private_derived_text_to_untrusted_destination_is_never_approvable (test_depth.Provenance) ... ok
+test_trusted_destination_unaffected (test_depth.Provenance) ... ok
+test_unrelated_text_to_untrusted_destination_still_needs_approval (test_depth.Provenance) ... ok
+test_loaded_policy_used_by_benchmark_not_only_validated (test_independent_review.BenchmarkIntegrity) ... ok
+test_partial_chunk_contact_is_not_complete_exfiltration (test_independent_review.BenchmarkIntegrity) ... ok
+test_approver_cannot_mutate_the_validated_call (test_independent_review.IndependentReview) ... ok
+test_approver_exception_or_nonboolean_does_not_allow (test_independent_review.IndependentReview) ... ok
+test_bad_policy_types_raise_policy_error (test_independent_review.IndependentReview) ... ok
+test_invalid_tool_and_control_characters_fail_closed (test_independent_review.IndependentReview) ... ok
+test_known_tool_channel_or_extra_recipient_cannot_be_relabelled (test_independent_review.IndependentReview) ... ok
+test_mock_probability_validation (test_independent_review.IndependentReview) ... error: obey_rate must be finite and between 0 and 1
+ok
+test_policy_never_selects_ablation (test_independent_review.IndependentReview) ... ok
+test_provenance_denial_does_not_invoke_approver (test_independent_review.IndependentReview) ... ok
+test_secret_in_host_or_email_domain_not_written_to_audit (test_independent_review.IndependentReview) ... ok
+test_packaged_policy_matches_editable_example (test_independent_review.PackageReview) ... ok
+test_malformed_calls_fail_closed (test_regressions.Regression) ... ok
+test_no_raw_or_encoded_secret_in_audit (test_regressions.Regression) ... ok
+test_short_canary_raw_value_not_silently_ignored (test_regressions.Regression) ... ok
+test_trusted_destination_is_not_content_authorization (test_regressions.Regression) ... ok
+test_url_parser_edge_cases_never_crash (test_regressions.Regression) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 0.200s
+
+OK
