@@ -1,0 +1,13 @@
+{
+  "sandbox_root": "/sandbox",
+  "trusted_hosts": ["docs.corp.example", ".corp.example"],
+  "trusted_email_domains": ["corp.example"],
+  "max_query_len": 0,
+  "tools": {
+    "read_file":  {"channel": "fs_read",  "reads_private": true, "args": {"path": "string"}},
+    "fetch_url":  {"channel": "web",      "args": {"url": "string"}},
+    "read_inbox": {"channel": "none",     "args": {}},
+    "send_email": {"channel": "email",    "args": {"to": "string", "body": "string"}},
+    "write_file": {"channel": "fs_write", "args": {"path": "string", "content": "string"}}
+  }
+}
